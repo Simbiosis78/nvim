@@ -24,9 +24,8 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
   \| autocmd BufLeave <buffer> set laststatus=2 noshowmode ruler
 
 " Single mappings
-let g:which_key_map['/'] = [ '<Plug>NERDCommenterToggle'  , 'comment' ]
+let g:which_key_map['/'] = [ ':NERDCommenterSexy'         , 'comment' ]
 let g:which_key_map['e'] = [ ':NERDTreeToggle'            , 'explorer' ]
-let g:which_key_map['f'] = [ ':Files'                     , 'search files' ]
 let g:which_key_map['h'] = [ '<C-W>s'                     , 'split below']
 let g:which_key_map['r'] = [ ':Ranger'                    , 'ranger' ]
 let g:which_key_map['S'] = [ ':Startify'                  , 'start screen' ]
@@ -63,5 +62,14 @@ let g:which_key_map.s = {
       \ 'z' : [':FZF'          , 'FZF'],
       \ }
 
+" f for flutter
+let g:which_key_map.f = {
+    \ 'name' : '+flutter',
+    \ 'r' : [':FlutterRun','Run'],
+    \ 'q' : [':FlutterQuit','Quit'],
+    \ 'hr' : [':FlutterHotReload','Hot Reload'],
+    \ 'hs' : [':FlutterHotRestart', 'Hot Restart'],
+    \ 'v' : [':FlutterVisualDebug', 'Visual Debug'],
+    \}
 " Register which key map
 call which_key#register('<Space>', "g:which_key_map")

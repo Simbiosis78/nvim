@@ -21,6 +21,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'thosakwe/vim-flutter'
     Plug 'natebosch/vim-lsc'
     Plug 'natebosch/vim-lsc-dart'
+    " Commentary
+    Plug 'tpope/vim-commentary' 
     " Awesome Vim Colorschemes
     Plug 'rafi/awesome-vim-colorschemes' 
     " Vim Snipets
@@ -38,6 +40,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'tpope/vim-fugitive' 
     " Vim Startify
     Plug 'mhinz/vim-startify' 
-
+    
 call plug#end()
 

@@ -25,7 +25,7 @@ autocmd BufEnter * if bufname('#') =~# "^NERD_tree_" && winnr('$') > 1 | b# | en
 let g:plug_window = 'noautocmd vertical topleft new'
 
 " Vim Colorscheme 
-colorscheme afterglow 
+colorscheme gruvbox
 
 " Airline configuration
 let g:airline_powerline_fonts = 1
